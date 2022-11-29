@@ -3,20 +3,19 @@ import Image from 'next/image';
 
 export default function About() {
   return (
-    <div
-      id='about'
-      className='h-screen p-10 pt-24 flex flex-col'
-    >
+    <div id='about' className='h-screen p-10 pt-24 flex flex-col'>
       <SectionHeader>about</SectionHeader>
-      <div className='flex justify-around items-center py-6'>
-        <Image
-          src={'/images/wow-fancy-pic.png'}
-          alt={'My fancy picture'}
-          width={250}
-          height={200}
-          className='rounded-full'
-        />
-        <div className='flex flex-col gap-5 w-[32rem]'>
+      <div className='flex justify-around py-6'>
+        <div>
+          <Image
+            src={'/images/wow-fancy-pic.png'}
+            alt={'My fancy picture'}
+            width={250}
+            height={250}
+            className='rounded-full'
+          />
+        </div>
+        <div className='flex flex-col gap-5 w-[32rem] text-[#DDDDDD]'>
           <p>
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Adipisci
             omnis autem, repellendus quaerat voluptatem maiores quasi eaque sunt

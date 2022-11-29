@@ -3,7 +3,7 @@ import React from 'react';
 
 export default function Navigation() {
   return (
-    <nav className='fixed top-0 left-0 w-screen flex justify-between p-8'>
+    <nav className='fixed top-0 left-0 w-screen flex justify-between p-8 bg-[#06113C]'>
       <Link
         href={'/'}
         className='font-black text-2xl hover:text-shadow-md transition-all ease-in-out duration-300'
