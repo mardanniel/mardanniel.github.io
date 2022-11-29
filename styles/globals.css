@@ -1,3 +1,26 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer utilities {
+  .text-shadow {
+    text-shadow: 1px 1px #FF8C32, 
+                 2px 2px #FF8C32,
+                 3px 3px #FF8C32;
+  }
+  .text-shadow-md {
+    text-shadow: 1px 1px #FF8C32, 
+                 2px 2px #FF8C32,
+                 3px 3px #FF8C32,
+                 4px 4px #FF8C32;
+  }
+}
+
+html {
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+  scrollbar-width: none; /* Firefox */
+}
+
+html::-webkit-scrollbar {
+  display: none; /* Safari and Chrome */
+}

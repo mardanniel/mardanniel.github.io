@@ -1,10 +1,9 @@
-import Container from '@components/container';
-import React from 'react'
+import SectionHeader from '@components/section-header';
 
 export default function Experience() {
   return (
-    <Container>
-      <div>Experience</div>
-    </Container>
+    <div id='experience' className='h-screen p-10 pt-24'>
+      <SectionHeader>experience</SectionHeader>
+    </div>
   );
 }
