@@ -3,16 +3,31 @@
 @tailwind utilities;
 
 @layer utilities {
-  .text-shadow {
-    text-shadow: 1px 1px #FF8C32, 
-                 2px 2px #FF8C32,
-                 3px 3px #FF8C32;
+  .orange-text-shadow-sm {
+    text-shadow: 1px 1px #ff8c32, 
+                 2px 2px #ff8c32;
   }
-  .text-shadow-md {
-    text-shadow: 1px 1px #FF8C32, 
-                 2px 2px #FF8C32,
-                 3px 3px #FF8C32,
-                 4px 4px #FF8C32;
+  .orange-text-shadow {
+    text-shadow: 1px 1px #ff8c32, 
+                 2px 2px #ff8c32, 
+                 3px 3px #ff8c32;
+  }
+  .orange-text-shadow-md {
+    text-shadow: 1px 1px #ff8c32, 
+                 2px 2px #ff8c32, 
+                 3px 3px #ff8c32,
+                 4px 4px #ff8c32;
+  }
+  .orange-drop-shadow {
+    filter: drop-shadow(1px 1px 0px #ff8c32) 
+            drop-shadow(2px 2px 0px #ff8c32)
+            drop-shadow(3px 3px 0px #ff8c32);
+  }
+  .orange-drop-shadow-md {
+    filter: drop-shadow(1px 1px 0px #ff8c32)
+            drop-shadow(2px 2px 0px #ff8c32)
+            drop-shadow(3px 3px 0px #ff8c32)
+            drop-shadow(4px 4px 0px #ff8c32);
   }
 }
 

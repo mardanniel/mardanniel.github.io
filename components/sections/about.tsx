@@ -4,7 +4,7 @@ import Image from 'next/image';
 export default function About() {
   return (
     <div id='about' className='h-screen p-10 pt-24 flex flex-col'>
-      <SectionHeader>about</SectionHeader>
+      <SectionHeader inlineBreak>about me</SectionHeader>
       <div className='flex justify-around py-6'>
         <div>
           <Image
@@ -15,21 +15,30 @@ export default function About() {
             className='rounded-full'
           />
         </div>
-        <div className='flex flex-col gap-5 w-[32rem] text-[#DDDDDD]'>
+        <div className='flex flex-col gap-5 w-[32rem] text-gray-300'>
           <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Adipisci
-            omnis autem, repellendus quaerat voluptatem maiores quasi eaque sunt
-            repudiandae? Necessitatibus et corporis esse a asperiores ab
-            excepturi, eligendi pariatur maiores. Maiores pariatur culpa a
-            asperiores provident. Earum vitae nam quos incidunt voluptates
-            similique fugiat laboriosam rem qui cumque eos, et vel iure corrupti
-            quis, necessitatibus provident eligendi veniam, sunt dolore?
+            Hello, My name is Mar Danniel and I&apos;ve always been fond of
+            building stuff on the web. My interest in web development started
+            way back in high school when I was introduced to HTML and CSS,
+            playing around with the tags and styles and eventually got to the
+            point of building a website for my school!
           </p>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere
-            officiis cupiditate praesentium provident hic possimus perferendis
-            eum, enim minima error! Perferendis asperiores adipisci accusantium
-            magnam? Fuga distinctio cupiditate odit? Eius.
+            As of today, I&apos;ve had the privilege of working on{' '}
+            <a href='https://mrgeek.online' target='_blank' rel='noreferrer'>
+              a solutions provider
+            </a>{' '}
+            and{' '}
+            <a
+              href='https://www.you-source.com'
+              target='_blank'
+              rel='noreferrer'
+            >
+              a software development agency
+            </a>
+            . My main focus right now is leveling up my skills in web
+            development and hoping to get a position where I can utilize my
+            skills as a developer.
           </p>
         </div>
       </div>
