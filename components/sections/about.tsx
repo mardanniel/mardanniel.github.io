@@ -1,9 +1,10 @@
+import OrangeLink from '@components/orange-link';
 import SectionHeader from '@components/section-header';
 import Image from 'next/image';
 
 export default function About() {
   return (
-    <div id='about' className='h-screen p-10 pt-24 flex flex-col'>
+    <div id='about' className='p-10 pt-24 flex flex-col'>
       <SectionHeader inlineBreak>about me</SectionHeader>
       <div className='flex justify-around py-6'>
         <div>
@@ -25,17 +26,23 @@ export default function About() {
           </p>
           <p>
             As of today, I&apos;ve had the privilege of working on{' '}
-            <a href='https://mrgeek.online' target='_blank' rel='noreferrer'>
+            <OrangeLink
+              href='https://mrgeek.online'
+              target='_blank'
+              rel='noreferrer'
+              title='Mr. Geek'
+            >
               a solutions provider
-            </a>{' '}
+            </OrangeLink>{' '}
             and{' '}
-            <a
+            <OrangeLink
               href='https://www.you-source.com'
               target='_blank'
               rel='noreferrer'
+              title='YouSource'
             >
               a software development agency
-            </a>
+            </OrangeLink>
             . My main focus right now is leveling up my skills in web
             development and hoping to get a position where I can utilize my
             skills as a developer.

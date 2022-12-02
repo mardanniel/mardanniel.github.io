@@ -1,5 +1,4 @@
 import OrangeButtonLink from '@components/orange-button-link';
-import Image from 'next/image';
 
 export default function Intro() {
   return (
