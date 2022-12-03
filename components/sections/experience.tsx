@@ -6,6 +6,7 @@ const experiences: TExperience[] = [
   {
     position: 'Software Engineer Intern',
     company: 'YouSource',
+    link: 'https://www.you-source.com',
     fromDate: 'September 2022',
     toDate: 'December 2022',
     descriptions: [
@@ -17,6 +18,7 @@ const experiences: TExperience[] = [
   {
     position: 'Backend Developer Intern',
     company: 'Mr. Geek',
+    link: 'https://mrgeek.online',
     fromDate: 'April 2022',
     toDate: 'July 2022',
     descriptions: [

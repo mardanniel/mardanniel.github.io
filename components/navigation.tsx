@@ -1,7 +1,7 @@
 import Link from 'next/link';
-import React from 'react';
+import { EOrangeLinkTypes } from 'types';
 import Logo from './logo';
-import OrangeButtonLink from './orange-button-link';
+import CustomLink from './custom-link';
 
 const links = [
   {
@@ -12,10 +12,10 @@ const links = [
     name: 'experience',
     href: '#experience',
   },
-  {
-    name: 'work',
-    href: '#work',
-  },
+  // {
+  //   name: 'work',
+  //   href: '#work',
+  // },
   {
     name: 'contact',
     href: '#contact',
@@ -24,22 +24,19 @@ const links = [
 
 export default function Navigation() {
   return (
-    <nav className='fixed top-0 left-0 w-screen flex justify-between items-center p-8 bg-[#06113C] z-10'>
+    <nav className='fixed top-0 left-0 w-screen flex justify-between items-center pb-5 pt-6 px-8 bg-palette-color-a z-10 drop-shadow-md'>
       <Link href={'/'}>
-        <Logo className='hover:orange-drop-shadow transition-all ease-in-out duration-300 h-8' />
+        <Logo className='hover:fancy-drop-shadow transition-all ease-in-out duration-300' />
       </Link>
       <ul className='flex items-center gap-4 px-2 font-normal'>
         {links.map(({ name, href }, key) => (
           <li
             key={key}
-            className='cursor-pointer font-bold hover:orange-text-shadow-sm transition-[text-shadow] ease-in-out duration-300'
+            className='cursor-pointer font-base hover:fancy-text-shadow transition-[text-shadow] ease-in-out duration-300'
           >
             <a href={href}>{name}</a>
           </li>
         ))}
-        <OrangeButtonLink href='#resume' style='font-bold'>
-          resume
-        </OrangeButtonLink>
       </ul>
     </nav>
   );

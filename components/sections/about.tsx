@@ -1,6 +1,7 @@
-import OrangeLink from '@components/orange-link';
+import CustomLink from '@components/custom-link';
 import SectionHeader from '@components/section-header';
 import Image from 'next/image';
+import { EOrangeLinkTypes } from 'types';
 
 export default function About() {
   return (
@@ -16,7 +17,7 @@ export default function About() {
             className='rounded-full'
           />
         </div>
-        <div className='flex flex-col gap-5 w-[32rem] text-gray-300'>
+        <div className='flex flex-col gap-5 w-[32rem] text-palette-color-c'>
           <p>
             Hello, My name is Mar Danniel and I&apos;ve always been fond of
             building stuff on the web. My interest in web development started
@@ -26,23 +27,25 @@ export default function About() {
           </p>
           <p>
             As of today, I&apos;ve had the privilege of working on{' '}
-            <OrangeLink
+            <CustomLink
               href='https://mrgeek.online'
               target='_blank'
               rel='noreferrer'
               title='Mr. Geek'
+              linktype={EOrangeLinkTypes.underlined}
             >
               a solutions provider
-            </OrangeLink>{' '}
+            </CustomLink>{' '}
             and{' '}
-            <OrangeLink
+            <CustomLink
               href='https://www.you-source.com'
               target='_blank'
               rel='noreferrer'
               title='YouSource'
+              linktype={EOrangeLinkTypes.underlined}
             >
               a software development agency
-            </OrangeLink>
+            </CustomLink>
             . My main focus right now is leveling up my skills in web
             development and hoping to get a position where I can utilize my
             skills as a developer.

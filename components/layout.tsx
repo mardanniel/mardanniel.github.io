@@ -9,7 +9,7 @@ const poppins = Poppins({
 
 export default function Layout({ children }: React.PropsWithChildren) {
   return (
-    <div className={`${poppins.variable} font-sans text-[#EEEEEE] px-40`}>
+    <div className={`${poppins.variable} font-sans text-palette-color-d px-40`}>
       {children}
     </div>
   );
