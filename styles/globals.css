@@ -1,41 +1,35 @@
+@import url(html.css);
+@import url(input.css);
+@import url(palette.css);
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 @layer utilities {
-  .orange-text-shadow-sm {
-    text-shadow: 1px 1px #ff8c32, 
-                 2px 2px #ff8c32;
+  .fancy-text-shadow-sm {
+    text-shadow: 1px 1px var(--palette-color-b), 
+                 2px 2px var(--palette-color-b);
   }
-  .orange-text-shadow {
-    text-shadow: 1px 1px #ff8c32, 
-                 2px 2px #ff8c32, 
-                 3px 3px #ff8c32;
+  .fancy-text-shadow {
+    text-shadow: 1px 1px var(--palette-color-b), 
+                 2px 2px var(--palette-color-b),
+                 3px 3px var(--palette-color-b);
   }
-  .orange-text-shadow-md {
-    text-shadow: 1px 1px #ff8c32, 
-                 2px 2px #ff8c32, 
-                 3px 3px #ff8c32,
-                 4px 4px #ff8c32;
+  .fancy-text-shadow-md {
+    text-shadow: 1px 1px var(--palette-color-b), 
+                 2px 2px var(--palette-color-b),
+                 3px 3px var(--palette-color-b), 
+                 4px 4px var(--palette-color-b);
   }
-  .orange-drop-shadow {
-    filter: drop-shadow(1px 1px 0px #ff8c32) 
-            drop-shadow(2px 2px 0px #ff8c32)
-            drop-shadow(3px 3px 0px #ff8c32);
+  .fancy-drop-shadow {
+    filter: drop-shadow(1px 1px 0px var(--palette-color-b))
+            drop-shadow(2px 2px 0px var(--palette-color-b))
+            drop-shadow(3px 3px 0px var(--palette-color-b));
   }
-  .orange-drop-shadow-md {
-    filter: drop-shadow(1px 1px 0px #ff8c32)
-            drop-shadow(2px 2px 0px #ff8c32)
-            drop-shadow(3px 3px 0px #ff8c32)
-            drop-shadow(4px 4px 0px #ff8c32);
+  .fancy-drop-shadow-md {
+    filter: drop-shadow(1px 1px 0px var(--palette-color-b))
+            drop-shadow(2px 2px 0px var(--palette-color-b))
+            drop-shadow(3px 3px 0px var(--palette-color-b))
+            drop-shadow(4px 4px 0px var(--palette-color-b));
   }
-}
-
-html {
-  -ms-overflow-style: none; /* Internet Explorer 10+ */
-  scrollbar-width: none; /* Firefox */
-}
-
-html::-webkit-scrollbar {
-  display: none; /* Safari and Chrome */
 }
