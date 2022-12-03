@@ -16,7 +16,7 @@ export default function Index() {
         <Intro />
         <About />
         <Experience />
-        <Work />
+        {/* <Work /> */}
         <Contact />
       </Layout>
     </>
