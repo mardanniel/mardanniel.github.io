@@ -24,6 +24,7 @@ const experiences: TExperience[] = [
     descriptions: [
       'Developed and maintained code of an existing web and mobile project using HTML, CSS, PHP, CodeIgniter 3, JavaScript, jQuery and React Native.',
       'Assigned as a team leader for interns to manage tasks and objectives.',
+      'Proposed software changes and enhancements to existing web and mobile project.'
     ],
   },
 ];

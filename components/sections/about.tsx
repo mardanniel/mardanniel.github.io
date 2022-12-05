@@ -6,7 +6,7 @@ import { EOrangeLinkTypes } from 'types';
 export default function About() {
   return (
     <div id='about' className='p-10 pt-24 flex flex-col'>
-      <SectionHeader inlineBreak>about me</SectionHeader>
+      <SectionHeader inlineBreak>about myself</SectionHeader>
       <div className='flex justify-around py-6'>
         <div>
           <Image
